@@ -30,6 +30,7 @@
         {
             this.btnBuild = new System.Windows.Forms.Button();
             this.btnQuit = new System.Windows.Forms.Button();
+            this.BtnTest = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnBuild
@@ -40,7 +41,7 @@
             this.btnBuild.TabIndex = 0;
             this.btnBuild.Text = "Build";
             this.btnBuild.UseVisualStyleBackColor = true;
-            this.btnBuild.Click += new System.EventHandler(this.BtnBuild_Click);
+            this.btnBuild.Click += new System.EventHandler(this.btnBuild_Click);
             // 
             // btnQuit
             // 
@@ -50,13 +51,24 @@
             this.btnQuit.TabIndex = 1;
             this.btnQuit.Text = "Quit";
             this.btnQuit.UseVisualStyleBackColor = true;
-            this.btnQuit.Click += new System.EventHandler(this.BtnQuit_Click);
+            this.btnQuit.Click += new System.EventHandler(this.btnQuit_Click);
+            // 
+            // BtnTest
+            // 
+            this.BtnTest.Location = new System.Drawing.Point(59, 71);
+            this.BtnTest.Name = "BtnTest";
+            this.BtnTest.Size = new System.Drawing.Size(63, 25);
+            this.BtnTest.TabIndex = 2;
+            this.BtnTest.Text = "Test";
+            this.BtnTest.UseVisualStyleBackColor = true;
+            this.BtnTest.Click += new System.EventHandler(this.BtnTest_Click);
             // 
             // Build
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(192, 260);
+            this.Controls.Add(this.BtnTest);
             this.Controls.Add(this.btnQuit);
             this.Controls.Add(this.btnBuild);
             this.Name = "Build";
@@ -69,6 +81,7 @@
 
         private System.Windows.Forms.Button btnBuild;
         private System.Windows.Forms.Button btnQuit;
+        private System.Windows.Forms.Button BtnTest;
     }
 }
 

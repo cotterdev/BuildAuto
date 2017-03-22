@@ -17,13 +17,14 @@ namespace Build_Form
             InitializeComponent();
         }
 
-        private void BtnBuild_Click(object sender, EventArgs e)
+        private void btnBuild_Click(object sender, EventArgs e)
         {
             string targetPath = @"C:\_Target";
 
             //Read each line of the config file into an array
+            //string[] sourceTargetFileName = System.IO.File.ReadAllLines(@"C:\_Config\AvitAutoConfig.txt");
             string[] sourceTargetFileName = System.IO.File.ReadAllLines(@"C:\_Config\AvitAutoConfig.txt");
-          
+
             // Create a new target folder, only if necessary.
             if (!System.IO.Directory.Exists(targetPath))
             {
@@ -35,18 +36,29 @@ namespace Build_Form
             {
                 if (sourceTargetFileName[i+1] != null)  //Probably don't need this if statement, was orig setup for when we had unused array elements.  Now we shouldn't have unused elements.
                 {
+                    sourceTargetFileName[i] = sourceTargetFileName[i].Remove(0, 7);
+                    sourceTargetFileName[i+1] = sourceTargetFileName[i+1].Remove(0, 7);
                     System.IO.File.Copy(sourceTargetFileName[i], sourceTargetFileName[i+1], true); //true = // overwrite the destination file if it already exists.
                 }
-            }
+            }//End for loop
 
             //Notify user copy is complete
             Console.WriteLine("Copy is complete!");
-            Console.ReadLine();
-        }
+        }//End Build_Click
 
-        private void BtnQuit_Click(object sender, EventArgs e)
+
+        private void BtnTest_Click(object sender, EventArgs e)
+        {
+            string[] sourceTargetFileName = System.IO.File.ReadAllLines(@"C:\_Config\AvitAutoConfig.txt");
+
+            string removeString = sourceTargetFileName[0].Remove(0, 7);
+            Console.WriteLine("Filename: {0}", removeString);
+        }//End Test_Click
+
+
+        private void btnQuit_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
+        }//End Quit_Click
     }
 }
