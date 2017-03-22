@@ -1,0 +1,9 @@
+C:\Users\miniAVIT\Documents\Visual Studio 2017\Projects\Build Machine\Build Form\Build Form\bin\Debug\Build Form.exe.config
+C:\Users\miniAVIT\Documents\Visual Studio 2017\Projects\Build Machine\Build Form\Build Form\bin\Debug\Build Form.exe
+C:\Users\miniAVIT\Documents\Visual Studio 2017\Projects\Build Machine\Build Form\Build Form\bin\Debug\Build Form.pdb
+C:\Users\miniAVIT\Documents\Visual Studio 2017\Projects\Build Machine\Build Form\Build Form\obj\Debug\Build Form.csprojResolveAssemblyReference.cache
+C:\Users\miniAVIT\Documents\Visual Studio 2017\Projects\Build Machine\Build Form\Build Form\obj\Debug\Build_Form.Build.resources
+C:\Users\miniAVIT\Documents\Visual Studio 2017\Projects\Build Machine\Build Form\Build Form\obj\Debug\Build_Form.Properties.Resources.resources
+C:\Users\miniAVIT\Documents\Visual Studio 2017\Projects\Build Machine\Build Form\Build Form\obj\Debug\Build Form.csproj.GenerateResource.Cache
+C:\Users\miniAVIT\Documents\Visual Studio 2017\Projects\Build Machine\Build Form\Build Form\obj\Debug\Build Form.exe
+C:\Users\miniAVIT\Documents\Visual Studio 2017\Projects\Build Machine\Build Form\Build Form\obj\Debug\Build Form.pdb

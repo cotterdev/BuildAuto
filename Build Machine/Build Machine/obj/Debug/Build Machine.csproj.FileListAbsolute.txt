@@ -1,0 +1,8 @@
+C:\Users\miniAVIT\Documents\Visual Studio 2017\Projects\Build Machine\Build Machine\Build Machine\bin\Debug\Build Machine.exe.config
+C:\Users\miniAVIT\Documents\Visual Studio 2017\Projects\Build Machine\Build Machine\Build Machine\bin\Debug\Build Machine.exe
+C:\Users\miniAVIT\Documents\Visual Studio 2017\Projects\Build Machine\Build Machine\Build Machine\bin\Debug\Build Machine.pdb
+C:\Users\miniAVIT\Documents\Visual Studio 2017\Projects\Build Machine\Build Machine\Build Machine\obj\Debug\Build Machine.csprojResolveAssemblyReference.cache
+C:\Users\miniAVIT\Documents\Visual Studio 2017\Projects\Build Machine\Build Machine\Build Machine\obj\Debug\Build Machine.exe
+C:\Users\miniAVIT\Documents\Visual Studio 2017\Projects\Build Machine\Build Machine\Build Machine\obj\Debug\Build Machine.pdb
+C:\Users\miniAVIT\Documents\Visual Studio 2017\Projects\Build Machine\Build Machine\Build Machine\obj\Debug\Build_Machine.Build_Form.resources
+C:\Users\miniAVIT\Documents\Visual Studio 2017\Projects\Build Machine\Build Machine\Build Machine\obj\Debug\Build Machine.csproj.GenerateResource.Cache
