@@ -24,6 +24,7 @@ namespace Build_Form
             string sourcePath = @"C:\_Source";
             string targetPath = @"C:\_Target";
 
+            //Hey
             //fileName[0] = "Test1.txt";
             //fileName[1] = "Test3.txt";
             //Read each line of the config file into an array
@@ -47,7 +48,7 @@ namespace Build_Form
                     //string sourceFile = System.IO.Path.Combine(sourcePath, sFile);
                     //string destFile = System.IO.Path.Combine(targetPath, sFile);
                     //System.IO.File.Copy(sourceFile, destFile, true); //true = // overwrite the destination file if it already exists.
-                    string destFile = System.IO.Path.Combine(targetPath, "Test1.txt");
+                    //string destFile = System.IO.Path.Combine(targetPath, "Test1.txt");
                     System.IO.File.Copy(fileConfig, destFile, true); //true = // overwrite the destination file if it already exists.
                     Console.WriteLine("Copied {0}", fileConfig);
                 }                
