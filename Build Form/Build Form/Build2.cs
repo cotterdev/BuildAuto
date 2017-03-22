@@ -19,11 +19,13 @@ namespace Build_Form
 
         private void btnBuild_Click(object sender, EventArgs e)
         {
-            string targetPath = @"C:\_Target";
+            string targetPath = @"C:\BuildTarget";
 
             //Read each line of the config file into an array
             //string[] sourceTargetFileName = System.IO.File.ReadAllLines(@"C:\_Config\AvitAutoConfig.txt");
-            string[] sourceTargetFileName = System.IO.File.ReadAllLines(@"C:\_Config\AvitAutoConfig.txt");
+            string[] configFileNames = System.IO.File.ReadAllLines(@"C:\_Config\AvitAutoConfig.txt");
+
+            DeleteTargetDir();
 
             // Create a new target folder, only if necessary.
             if (!System.IO.Directory.Exists(targetPath))
@@ -32,13 +34,13 @@ namespace Build_Form
             }
 
             // To copy a file to another location
-            for (int i = 0; i < sourceTargetFileName.Length; i=i+2)
+            for (int i = 0; i < configFileNames.Length; i=i+2)
             {
-                if (sourceTargetFileName[i+1] != null)  //Probably don't need this if statement, was orig setup for when we had unused array elements.  Now we shouldn't have unused elements.
+                if (configFileNames[i+1] != null)  //Probably don't need this if statement, was orig setup for when we had unused array elements.  Now we shouldn't have unused elements.
                 {
-                    sourceTargetFileName[i] = sourceTargetFileName[i].Remove(0, 7);
-                    sourceTargetFileName[i+1] = sourceTargetFileName[i+1].Remove(0, 7);
-                    System.IO.File.Copy(sourceTargetFileName[i], sourceTargetFileName[i+1], true); //true = // overwrite the destination file if it already exists.
+                    configFileNames[i] = configFileNames[i].Remove(0, 7);
+                    configFileNames[i+1] = configFileNames[i+1].Remove(0, 7);
+                    System.IO.File.Copy(configFileNames[i], configFileNames[i+1], true); //true = // overwrite the destination file if it already exists.
                 }
             }//End for loop
 
@@ -60,5 +62,29 @@ namespace Build_Form
         {
             Application.Exit();
         }//End Quit_Click
+
+        private void DeleteTargetDir()
+        {
+            //MessageBox.Show("Entered Delete");
+            Console.WriteLine("Entered deleteTargetDir");
+
+            if (System.IO.Directory.Exists(@"C:\BuildTarget"))
+            {
+                Console.WriteLine("Entered if statement");
+                try
+                {
+                    Console.WriteLine("Entered try");    
+                    System.IO.Directory.Delete(@"C:\BuildTarget", true);
+                }
+
+                catch (System.IO.IOException e)
+                {
+                    Console.WriteLine("Entered catch");
+                    Console.WriteLine(e.Message);
+                }
+            }
+
+        }
+
     }
 }
