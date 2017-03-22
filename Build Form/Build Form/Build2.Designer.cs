@@ -40,7 +40,7 @@
             this.btnBuild.TabIndex = 0;
             this.btnBuild.Text = "Build";
             this.btnBuild.UseVisualStyleBackColor = true;
-            this.btnBuild.Click += new System.EventHandler(this.btnBuild_Click);
+            this.btnBuild.Click += new System.EventHandler(this.BtnBuild_Click);
             // 
             // btnQuit
             // 
@@ -50,7 +50,7 @@
             this.btnQuit.TabIndex = 1;
             this.btnQuit.Text = "Quit";
             this.btnQuit.UseVisualStyleBackColor = true;
-            this.btnQuit.Click += new System.EventHandler(this.btnQuit_Click);
+            this.btnQuit.Click += new System.EventHandler(this.BtnQuit_Click);
             // 
             // Build
             // 
